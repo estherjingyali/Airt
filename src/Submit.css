@@ -1,0 +1,11 @@
+.submit-button {
+    padding: 8px;
+    margin-left: 5px;
+    color:rgb(219, 199, 175);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-container {
+    margin: 40px auto;
+}

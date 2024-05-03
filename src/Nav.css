@@ -1,0 +1,122 @@
+.nav-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header,
+.navbar,
+.footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(240, 227, 206);
+    justify-content: space-between;
+}
+
+.header-item {
+    padding: 10px;
+    color: rgb(113, 187, 252);
+    cursor: pointer;
+}
+
+.header-item:last-child {
+    margin-left: auto;
+}
+
+.gg-shopping-bag {
+    transform: scale(var(--ggs, 1))
+}
+
+.gg-shopping-bag,
+.gg-shopping-bag::after {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 3px
+}
+
+.gg-shopping-bag::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top: 0;
+    top: 2px;
+    left: 3px
+}
+
+.gg-log-out {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 6px;
+    height: 16px;
+    border: 2px solid;
+    transform: scale(var(--ggs, 1));
+    border-right: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-left: -10px
+}
+
+.gg-log-out::after,
+.gg-log-out::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-log-out::after {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(-45deg);
+    width: 8px;
+    height: 8px;
+    left: 4px;
+    bottom: 2px
+}
+
+.gg-log-out::before {
+    border-radius: 3px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    left: 5px;
+    bottom: 5px
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(219, 199, 175, 0.267);
+    gap: 10px;
+    justify-content: center;
+}
+
+.navbar-item {
+    padding: 10px;
+    color: rgb(113, 187, 252);
+    cursor: pointer;
+}
+
+.navbar-item.active {
+    background-color: rgba(250, 243, 148, 0.25);
+}
+
+.footer {
+    display: flex;
+    color: rgb(113, 187, 252);
+    background-color:rgba(219, 199, 175, 0.267);
+}

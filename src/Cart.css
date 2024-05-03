@@ -1,0 +1,25 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .cart-button {
+    padding: 8px;
+    margin-left: 5px;
+    color:rgb(219, 199, 175);
+    border-radius: 4px;
+    cursor: pointer;
+}

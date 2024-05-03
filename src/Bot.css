@@ -1,0 +1,63 @@
+.bot-container {
+    width: 600px;
+    height: 400px;
+    border: 1px solid rgb(240, 227, 206);
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.messages {
+    padding: 10px;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: rgb(240, 227, 206);
+    border-radius: 4px;
+    font-size: 16px;
+    display: block;
+}
+
+.message span {
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.message.bot {
+    text-align: left;
+}
+
+.message.user {
+    text-align: right;
+    background-color: rgba(219, 199, 175, 0.267);
+}
+
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bot-button {
+    padding: 8px;
+    margin-left: 5px;
+    color:rgb(219, 199, 175);
+    border-radius: 4px;
+    cursor: pointer;
+}
